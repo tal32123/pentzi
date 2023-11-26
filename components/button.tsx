@@ -1,22 +1,29 @@
-import { Button } from '@mui/material';
-import React from 'react';
+import { Button } from "@mui/material";
+import React from "react";
 
 interface ButtonProps {
-  variant: 'text' | 'outlined' | 'contained';
+  variant: "text" | "outlined" | "contained";
   label: string;
-  width?: string;
-  height?: string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void; 
+  width: string;
+  height: string;
+  type: "button" | "submit" | "reset";
+  value: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const PentziButton = (props: ButtonProps) => {
+const PentziButton = (props: Partial<ButtonProps>) => {
   const buttonStyle = {
-    width: props.width || 'auto',
-    height: props.height || 'auto',
+    width: props.width || "auto",
+    height: props.height || "auto",
   };
 
   return (
-    <Button variant={props.variant} style={buttonStyle}>
+    <Button
+      variant={props.variant}
+      style={buttonStyle}
+      type={props.type}
+      onClick={props.onClick}
+    >
       {props.label}
     </Button>
   );
