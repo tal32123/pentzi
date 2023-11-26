@@ -122,7 +122,7 @@ export default function PersistentDrawerLeft() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Finances', 'Notifications'].map((text, index) => (
+          {['Finances', 'Notifications', 'Documents'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
