@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import PentziButton from "@/components/pentzi-button";
-import LoginForm from "@/components/LoginForm";
-import Link from "next/link";
+import LoginForm from "@/components/login-form";
 
 export default function Home() {
   const pentziFooterText =
