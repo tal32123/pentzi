@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import PentziInput from "@/components/input";
 import PentziButton from "@/components/button";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 import { useState } from "react";
 import router from "next/router";
 
@@ -14,10 +13,8 @@ export default function Home() {
   const pentziFooterText =
     "Pentzi is a revolutionary pension investing app designed to simplify and enhance the way you manage your retirement funds. Pentzi makes it easy for anyone to take control of their pension investments. The app offers a range of investment options, tailored to meet individual retirement goals and risk preferences. Whether you're a seasoned investor or new to the world of pensions, Pentzi provides all the tools and resources needed to grow your retirement savings effectively. Stay informed with real-time market insights, easy portfolio management, and personalized investment strategies, all at your fingertips. Start securing your financial future today with Pentzi, the smart way to invest in your pension.";
   console.log("here");
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log("Logging in with:", username, password);
-    // Add routing to /dashboard
     router.push("/dashboard");
   };
 
@@ -26,7 +23,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/images/pentzi.svg" // Changed path
+          src="/images/pentzi.svg" 
           alt="Pentzi Logo"
           width={1800}
           height={322}

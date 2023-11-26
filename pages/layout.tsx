@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: 'Pentzi',
   description: 'Next generation finance',
 }
-
 export default function RootLayout({
   children,
 }: {

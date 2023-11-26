@@ -7,7 +7,7 @@ interface InputProps {
     type?: string;
     autoComplete: string;
     value: string;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: () => void;
 }
 export default function PentziInput(props: Partial<InputProps>) {
     return (
@@ -22,4 +22,4 @@ export default function PentziInput(props: Partial<InputProps>) {
         onChange={props.onChange}
         />
     );
-};
+}

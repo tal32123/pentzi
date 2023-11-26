@@ -8,7 +8,7 @@ interface ButtonProps {
   height: string;
   type: "button" | "submit" | "reset";
   value: string;
-  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick: () => void;
 }
 
 const PentziButton = (props: Partial<ButtonProps>) => {
