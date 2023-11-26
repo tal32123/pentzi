@@ -8,7 +8,8 @@ interface ButtonProps {
   height: string;
   type: "button" | "submit" | "reset";
   value: string;
-  onClick: () => void;
+  // eslint-disable-next-line no-unused-vars
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const PentziButton = (props: Partial<ButtonProps>) => {

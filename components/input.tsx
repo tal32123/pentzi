@@ -7,7 +7,8 @@ interface InputProps {
     type?: string;
     autoComplete: string;
     value: string;
-    onChange: () => void;
+    // eslint-disable-next-line no-unused-vars
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 export default function PentziInput(props: Partial<InputProps>) {
     return (
