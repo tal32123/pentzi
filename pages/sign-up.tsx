@@ -73,7 +73,7 @@ const SignUp = () => {
               type="submit"
               value="Submit"
             />
-            <Link href="/page">
+            <Link href="/">
                 <PentziButton label='Back'/>
             </Link>
           </div>
