@@ -4,11 +4,15 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
-export default function PentziCard() {
+interface PentziCardProps {
+    children: React.ReactNode;
+  }
+  
+export default function PentziCard({ children }: PentziCardProps) {
   return (
     <Card sx={{ minWidth: 275, maxWidth: 500 }}>
       <CardContent>
-      
+      {children}
       </CardContent>
       <CardActions>
         <Button size="small">Learn More</Button>

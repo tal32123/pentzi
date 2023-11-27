@@ -10,7 +10,8 @@ const Dashboard = () => {
       <Grid container spacing={2}>
       {[...Array(4)].map((_, index) => ( 
         <Grid item xs={12} sm={6} md={3} key={index}>
-          <PentziCard />
+          <PentziCard>chart {index + 1} will be here! 
+            </PentziCard>
         </Grid>
       ))}
       </Grid>
