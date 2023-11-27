@@ -57,4 +57,12 @@
     align-items: center;
     gap: 15px;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+  }
+  
   
