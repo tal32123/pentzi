@@ -151,12 +151,12 @@ export default function PersistentDrawerLeft() {
             </ListItem>
           </Link>
           <a href="mailto:tal32123@gmail.com">
-          <ListItem key="Contact Us" disablePadding>
+            <ListItem key="Contact Us" disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                   <MailIcon />
+                  <MailIcon />
                 </ListItemIcon>
-                <ListItemText primary= "Contact Us" />
+                <ListItemText primary="Contact Us" />
               </ListItemButton>
             </ListItem>
           </a>
