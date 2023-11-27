@@ -57,6 +57,7 @@
     align-items: center;
     gap: 15px;
   }
+  
   .center {
     display: flex;
     justify-content: center;

@@ -13,7 +13,9 @@ const Dashboard = () => {
       </div>
       <Grid container spacing={2}>
       {[...Array(4)].map((_, index) => ( 
-        <Grid item xs={12} sm={6} md={3} key={index}>
+        <Grid item xs={12} sm={6} md={6} key={index}>
+                <div className={UtilStyles.center} >
+
           <PentziCard>
             <LineChart stockData={ [
               { date: '2023-01-01', price: Math.random() * 100 },
@@ -21,6 +23,8 @@ const Dashboard = () => {
               { date: '2023-01-03', price: Math.random() * 500  },
             ]}/>
             </PentziCard>
+            </div>
+
         </Grid>
       ))}
       </Grid>
