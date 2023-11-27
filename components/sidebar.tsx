@@ -150,7 +150,17 @@ export default function PersistentDrawerLeft() {
               </ListItemButton>
             </ListItem>
           </Link>
-          {["Terms and Conditions", "Contact Us"].map((text, index) => (
+          <a href="mailto:tal32123@gmail.com">
+          <ListItem key="Contact Us" disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                   <MailIcon />
+                </ListItemIcon>
+                <ListItemText primary= "Contact Us" />
+              </ListItemButton>
+            </ListItem>
+          </a>
+          {["Terms and Conditions"].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>

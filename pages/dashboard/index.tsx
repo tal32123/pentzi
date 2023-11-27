@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div>
       <Sidebar></Sidebar>
       <div className={UtilStyles.center}>
-        <h1 className={UtilStyles.lightText}>Your Data</h1>
+        <h1 className={UtilStyles.lightText}>Your Financial Data</h1>
       </div>
       <Grid container spacing={2}>
         {[...Array(4)].map((_, index) => (
