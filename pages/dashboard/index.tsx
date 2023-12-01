@@ -14,6 +14,9 @@ const Dashboard = () => {
         {[...Array(2)].map((_, index) => (
           <Grid item xs={12} sm={12} md={6} lg={4} spacing={0} key={index}>
             <PentziCard>
+            <div className={UtilStyles.center}>
+            <h3>Chart {index + 1}</h3>
+            </div>
               <div className={UtilStyles.center}>
                 <LineChart
                   stockData={[
