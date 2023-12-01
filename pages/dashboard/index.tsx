@@ -10,11 +10,11 @@ const Dashboard = () => {
       <div className={UtilStyles.center}>
         <h1 className={UtilStyles.lightText}>Your Financial Data</h1>
       </div>
-      <Grid container spacing={2}>
-        {[...Array(4)].map((_, index) => (
-          <Grid item xs={12} sm={6} md={6} key={index}>
-            <div className={UtilStyles.center}>
-              <PentziCard>
+      <Grid container spacing={2} className={UtilStyles.center}>
+        {[...Array(2)].map((_, index) => (
+          <Grid item xs={12} sm={12} md={6} lg={4} spacing={0} key={index}>
+            <PentziCard>
+              <div className={UtilStyles.center}>
                 <LineChart
                   stockData={[
                     { date: "2023-01-01", price: Math.random() * 100 },
@@ -22,8 +22,8 @@ const Dashboard = () => {
                     { date: "2023-01-03", price: Math.random() * 500 },
                   ]}
                 />
-              </PentziCard>
-            </div>
+              </div>
+            </PentziCard>
           </Grid>
         ))}
       </Grid>
